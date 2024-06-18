@@ -151,18 +151,18 @@
                     }
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/Pazaak.loader.js'
+                    unityLoader.src = 'Build/web5.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/Pazaak.data.unityweb',
-                                frameworkUrl: 'Build/Pazaak.framework.js.unityweb',
-                                codeUrl: 'Build/Pazaak.wasm.unityweb',
+                                dataUrl: 'Build/web5.data.gz',
+                                frameworkUrl: 'Build/web5.framework.js.gz',
+                                codeUrl: 'Build/web5.wasm.gz',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'Fat Lion Studio',
                                 productName: 'Pazaak',
-                                productVersion: '1.0.0.5',
+                                productVersion: '1.0.0.6',
                                 // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                                 // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
                             },
